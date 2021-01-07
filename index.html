@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+    <main class="flex-container">
+        <h1 class="title">Pokédex</h1>
+        <form class="flex-form" action="">
+            <input id="pokemon-input" type="text" required minlength="1" maxlength="30" placeholder="Pokemon Name or ID">
+            <input id="btn-submit" type="button" value="Send">
+        </form>
+        <div id="card">
+            <img src="" id="poke-img">
+            <div class="card-container">
+                <p id="name"></p>
+                <p class="poke-id item-content">ID:</p>
+                <p class="item-info" id="content-id"></p>
+                <p class="poke-height item-content">Height:</p>
+                <p class="item-info" id="content-height"></p>
+                <p class="poke-weight item-content">Weight:</p>
+                <p class="item-info" id="content-weight"></p>
+                <p class="poke-type item-content">Type:</p>
+                <p class="item-info" id="content-type"></p>
+            </div>
+        </div>
+        <div id="card-error">Pokemon not found...</div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
